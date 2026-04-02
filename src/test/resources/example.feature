@@ -1,8 +1,7 @@
-Feature: Calculate fees
+# File: src/test/resources/example.feature
+Feature: Sample API test
 
-  Scenario: Simple GET
-    # print testing
-    
-    Given url 'https://jsonplaceholder.typicode.com/posts/1'
+  Scenario: Simple GET request
+    Given url 'https://postman-echo.com/get?foo1=bar1&foo2=bar2'
     When method GET
-    Then status 200
+    Then status 304

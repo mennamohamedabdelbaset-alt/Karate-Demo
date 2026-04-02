@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"5be1ea53-40de-4e0e-b0db-7f12e45f82d6",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>example</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-02 10:54:34 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Simple GET request</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">example.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Sample API test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Simple GET request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1273</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://postman-echo.com/get?foo1=bar1&amp;foo2=bar2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1266</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">22:54:33.912 request:
+1 &gt; GET https://postman-echo.com/get?foo1=bar1&amp;foo2=bar2
+1 &gt; Host: postman-echo.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.30)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:54:34.602 response time in milliseconds: 654
+1 &lt; 200
+1 &lt; Date: Thu, 02 Apr 2026 20:54:33 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; etag: W/&quot;f5-yzuVVXKaItlXvGSC15gUDyVeaq8&quot;
+1 &lt; vary: Accept-Encoding
+1 &lt; x-envoy-upstream-service-time: 5
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Set-Cookie: sails.sid=s%3A9F-9gnmkxjUbNq-EiRkVQNvU_Oo5Am_f.xXd%2F84YJdg25ZIhTpugThIR9daEWZAu3M3DvJJdXZt4; Path=/; HttpOnly
+1 &lt; Set-Cookie: __cf_bm=Oqpq6AdFqJg62qWPlGkipblC.bO6eelQkvCX6BAXBm8-1775163273.738196-1.0.1.1-DMQlYRQp6Gzds5jxj9Vuz5ymACdDVIqB.VOtk9psHa_czGWKcLf58TmL9CbsDu6I7QZPAIQ8zjsjCK9ddt6OnUKY.3qvWpfNW6KyF3R_LuXQwshZp8BthFL_iDNMI9Mi; HttpOnly; Secure; Path=/; Domain=postman-echo.com; Expires=Thu, 02 Apr 2026 21:24:33 GMT
+1 &lt; Set-Cookie: _cfuvid=ONz30yWc3APXIK9_nrKYsE78Fr42vCjThj5h8tAAhOI-1775163273.738196-1.0.1.1-pPy7XOTATr7tm2fWSh7M4jorcsJLQB03NXgYNtxsZcM; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com
+1 &lt; set-cookie: sails.sid=s%3A9F-9gnmkxjUbNq-EiRkVQNvU_Oo5Am_f.xXd%2F84YJdg25ZIhTpugThIR9daEWZAu3M3DvJJdXZt4; Path=/; HttpOnly
+1 &lt; set-cookie: __cf_bm=Oqpq6AdFqJg62qWPlGkipblC.bO6eelQkvCX6BAXBm8-1775163273.738196-1.0.1.1-DMQlYRQp6Gzds5jxj9Vuz5ymACdDVIqB.VOtk9psHa_czGWKcLf58TmL9CbsDu6I7QZPAIQ8zjsjCK9ddt6OnUKY.3qvWpfNW6KyF3R_LuXQwshZp8BthFL_iDNMI9Mi; HttpOnly; Secure; Path=/; Domain=postman-echo.com; Expires=Thu, 02 Apr 2026 21:24:33 GMT
+1 &lt; set-cookie: _cfuvid=ONz30yWc3APXIK9_nrKYsE78Fr42vCjThj5h8tAAhOI-1775163273.738196-1.0.1.1-pPy7XOTATr7tm2fWSh7M4jorcsJLQB03NXgYNtxsZcM; HttpOnly; SameSite=None; Secure; Path=/; Domain=postman-echo.com
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9e62babcd87d11bc-MRS
+{&quot;args&quot;:{&quot;foo1&quot;:&quot;bar1&quot;,&quot;foo2&quot;:&quot;bar2&quot;},&quot;headers&quot;:{&quot;host&quot;:&quot;postman-echo.com&quot;,&quot;x-forwarded-proto&quot;:&quot;https&quot;,&quot;accept-encoding&quot;:&quot;gzip, br&quot;,&quot;user-agent&quot;:&quot;Apache-HttpClient/4.5.14 (Java/11.0.30)&quot;},&quot;url&quot;:&quot;https://postman-echo.com/get?foo1=bar1&amp;foo2=bar2&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 304</span>
+      </div>
+    </div>
+    <div class="time-cell failed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">22:54:34.643 classpath:example.feature:7
+Then status 304
+status code was: 200, expected: 304, response time in milliseconds: 654, url: https://postman-echo.com/get?foo1=bar1&amp;foo2=bar2, response: 
+{&quot;args&quot;:{&quot;foo1&quot;:&quot;bar1&quot;,&quot;foo2&quot;:&quot;bar2&quot;},&quot;headers&quot;:{&quot;host&quot;:&quot;postman-echo.com&quot;,&quot;x-forwarded-proto&quot;:&quot;https&quot;,&quot;accept-encoding&quot;:&quot;gzip, br&quot;,&quot;user-agent&quot;:&quot;Apache-HttpClient/4.5.14 (Java/11.0.30)&quot;},&quot;url&quot;:&quot;https://postman-echo.com/get?foo1=bar1&amp;foo2=bar2&quot;}
+classpath:example.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
